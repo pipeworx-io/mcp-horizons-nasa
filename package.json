@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-horizons-nasa",
+  "version": "0.1.0",
+  "description": "NASA JPL Horizons — solar-system body ephemerides",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "horizons-nasa"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-horizons-nasa"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

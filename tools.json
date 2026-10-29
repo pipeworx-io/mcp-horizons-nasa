@@ -1,0 +1,113 @@
+[
+  {
+    "name": "lookup",
+    "description": "Resolve an object name → SPK id.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "ephemeris",
+    "description": "Generate an ephemeris (default observer table).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "command": {
+          "type": "string",
+          "description": "SPK id, name, or designation. e.g. \"499\" (Mars)."
+        },
+        "center": {
+          "type": "string",
+          "description": "Default \"500@399\" (geocentric)."
+        },
+        "start_time": {
+          "type": "string",
+          "description": "e.g. \"2026-05-18\""
+        },
+        "stop_time": {
+          "type": "string",
+          "description": "e.g. \"2026-05-19\""
+        },
+        "step_size": {
+          "type": "string",
+          "description": "e.g. \"1h\", \"1d\" (default \"1h\")."
+        },
+        "table_type": {
+          "type": "string",
+          "description": "OBSERVER (default) | VECTORS | ELEMENTS"
+        }
+      },
+      "required": [
+        "command",
+        "start_time",
+        "stop_time"
+      ]
+    }
+  },
+  {
+    "name": "observers",
+    "description": "Convenience: ephemeris with table_type=OBSERVER.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "command": {
+          "type": "string"
+        },
+        "center": {
+          "type": "string"
+        },
+        "start_time": {
+          "type": "string"
+        },
+        "stop_time": {
+          "type": "string"
+        },
+        "step_size": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "command",
+        "start_time",
+        "stop_time"
+      ]
+    }
+  },
+  {
+    "name": "vectors",
+    "description": "Convenience: ephemeris with table_type=VECTORS.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "command": {
+          "type": "string"
+        },
+        "center": {
+          "type": "string"
+        },
+        "start_time": {
+          "type": "string"
+        },
+        "stop_time": {
+          "type": "string"
+        },
+        "step_size": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "command",
+        "start_time",
+        "stop_time"
+      ]
+    }
+  }
+]

@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-horizons-nasa",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "JPL Horizons MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "horizons-nasa",
     "gatewaySlug": "horizons-nasa",
-    "sourceHash": "v1-aa1c6060b7c0df04b54b3ddb221cbd456bf054f1de1098a8faaa3c94500e1347",
-    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
+    "sourceHash": "v1-04aea252995426b9e3a48d26f14f19cabf0b308faff6845f72177b5874e83bf5",
+    "sourceCommit": "0ca9712c0ac03bb0121cc7e81b202d0c45ac02ca"
   }
 }
